@@ -13,7 +13,7 @@ export const Producto = (props) => {
 
 export const Comida = (props) => {
     return(
-        <div>
+        <div className="grid">
             <img className="imagen" src={props.src} alt={props.alt}/>
             <p className="imagen">{props.name}</p>
             <p>{props.description}</p>

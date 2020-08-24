@@ -1,8 +1,11 @@
 import React from 'react';
-
+import "./Header.css"
 const Header = (props) => {
     return (
-        <h1>El titulo de la pagina es {props.name}</h1>
+        <div>
+            <h1>{props.name}</h1>
+        </div>
+
     )
 }
 

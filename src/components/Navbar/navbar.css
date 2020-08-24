@@ -1,0 +1,22 @@
+.navItem{
+    display: inline;
+    margin: 1rem 8rem;
+    width: 20%;
+    cursor: pointer;
+
+}
+a{
+    color: #202833;
+}
+
+a:hover{
+    transform: scale(3);
+    color: white;
+}
+
+nav {
+    background-color: #C5C6C8;
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+}
