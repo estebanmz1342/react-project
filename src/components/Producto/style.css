@@ -1,4 +1,9 @@
 .imagen{
-    width: 105px;
+    width: 250px;
     color: green;
+}
+.grid{
+    display: inline-block;
+    padding: 25px;
+    flex: fit-content;
 }

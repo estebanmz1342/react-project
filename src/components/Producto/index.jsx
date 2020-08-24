@@ -4,17 +4,22 @@ import "./style.css";
 export const Producto = (props) => {
 
     return(
-        <div>
+        <div className="grid">
             <img className="imagen" src={props.src} alt={props.alt}/>
             <p className="imagen">{props.name}</p>
         </div>
     )
 }
 
-export const Informacion = (props) => {
-
+export const Comida = (props) => {
     return(
-        <h1>ESTO ES UNA PRUEBA</h1>
+        <div>
+            <img className="imagen" src={props.src} alt={props.alt}/>
+            <p className="imagen">{props.name}</p>
+            <p>{props.description}</p>
+            <p>{props.cantidad}</p>
+            <p>{props.price}</p>
+        </div>
     )
 }
 //export default Producto;
