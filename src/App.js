@@ -15,6 +15,15 @@ function App() {
                     <Route path="/food">
                         <Pagina2/>
                     </Route>
+                    <Route path="/clothes">
+                        <Pagina2/>
+                    </Route>
+                    <Route path="/accessories">
+                        <Pagina2/>
+                    </Route>
+                    <Route path="/details">
+                        <Pagina2/>
+                    </Route>
                     <Route path="/">
                     <Home/>
                 </Route>
