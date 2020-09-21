@@ -3,7 +3,7 @@ import "./Header.css"
 const Header = (props) => {
     return (
         <div>
-            <h1>{props.name}</h1>
+            <h1><a className="header-title" href="/home">{props.name}</a></h1>
         </div>
 
     )

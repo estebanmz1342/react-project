@@ -28,16 +28,19 @@ const Pagina2 = () => {
     }]
     return (
         <>
-            <div>
+            <div className="contenedor-pagina2">
                 <Header name="InstaShop"/>
-                {relInfo.map((item) => {
-                    return <RelatedInfo key={item.name} relInfo1={item.relInfo1} relInfo2={item.relInfo2}
-                                        relInfo3={item.relInfo3} relInfo4={item.relInfo4}/>;
-                })}
-                {foodInfo.map((item) => {
-                    return <Comida key={item.name} src={item.src} alt={item.alt} name={item.name}
-                                   description={item.description}/>;
-                })}
+                <div className="contenedor-comida">
+                    {relInfo.map((item) => {
+                        return <RelatedInfo key={item.name} relInfo1={item.relInfo1} relInfo2={item.relInfo2}
+                                            relInfo3={item.relInfo3} relInfo4={item.relInfo4}/>;
+                    })}
+                    {foodInfo.map((item) => {
+                        return <Comida key={item.name} src={item.src} alt={item.alt} name={item.name}
+                                       description={item.description}/>;
+                    })}
+                </div>
+
             </div>
 
         </>

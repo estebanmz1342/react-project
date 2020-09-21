@@ -1,19 +1,28 @@
 import React from 'react';
 import './App.css';
-import Pagina1 from "./components/Pagina1/"
+import Home from "./components/Home/"
 import Pagina2 from "./components/Pagina2"
 import Pagina3 from "./components/Pagina3"
 import Navbar from "./components/Navbar/"
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function App() {
     return (
         <>
-            <Navbar/>
-            <Pagina1 />
-            <hr/>
-            <Pagina2/>
-            <hr/>
-            <Pagina3/>
+            <Router>
+                <Navbar/>
+                <Switch>
+                    <Route path="/food">
+                        <Pagina2/>
+                    </Route>
+                    <Route path="/">
+                    <Home/>
+                </Route>
+                </Switch>
+            </Router>
+
+
+
         </>
 
     );

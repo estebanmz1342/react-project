@@ -1,17 +1,18 @@
-.navItem{
+.navItem {
     display: inline;
-    margin: 1rem 8rem;
+    margin: 1rem 7rem;
     width: 20%;
     cursor: pointer;
 
 }
-a{
+
+a {
     color: #202833;
 }
 
-a:hover{
-    transform: scale(3);
+a:hover {
     color: white;
+    transition: color 0.5s ease;
 }
 
 nav {
@@ -19,4 +20,5 @@ nav {
     padding: 0.5rem 0;
     position: sticky;
     top: 0;
+
 }

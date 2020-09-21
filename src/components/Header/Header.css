@@ -4,5 +4,12 @@ h1{
     text-align: center;
     font-family: 'MuseoModerno', cursive;
     font-weight: 300;
-    font-size: 900;
+    font-size: 5em;
+}
+.header-title{
+    text-decoration: none;
+}
+.header-title:hover{
+    color: darkgray;
+    transition: color 0.5s ease;
 }

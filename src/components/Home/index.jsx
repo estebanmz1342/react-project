@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from "../Header/Header";
 import {Producto} from "../Producto";
+import "./style.css"
 
-const Pagina1 = () => {
+const Home = () => {
     const mainInfo = [{
         src: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/04/10/16/online-clothes-shops-hero.jpg?width=990",
         alt: "Clothes image",
@@ -23,11 +24,14 @@ const Pagina1 = () => {
     return (
         <>
             <Header name="InstaShop"/>
-            {mainInfo.map((item) => {
-                return <Producto key={item.name} src={item.src} alt={item.alt} name={item.name}/>;
-            })}
+            <div className="contenedor-pagina1">
+                {mainInfo.map((item) => {
+                    return <Producto key={item.name} src={item.src} alt={item.alt} name={item.name}/>;
+                })}
+            </div>
+
         </>
     )
 }
 
-export default Pagina1;
+export default Home;
