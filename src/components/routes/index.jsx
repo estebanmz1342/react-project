@@ -16,7 +16,7 @@ const Routing = () => {
             <Navbar />
             <Header />
             <Switch>
-                <Route exact path="/home" component={Home}/>
+                <Route exact path="/" component={Home}/>
                 <Route path="/clothes" component={Clothes}/>
                 <Route path="/food" component={Food}/>
                 <Route path="/details" component={Details}/>

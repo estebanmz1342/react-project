@@ -1,7 +1,7 @@
 .navItem {
-    display: inline;
-    margin: 1rem 7rem;
-    width: 20%;
+    display: flex;
+    //margin: 1rem 7rem;
+    //width: 15%;
     cursor: pointer;
 
 }
@@ -20,5 +20,12 @@ nav {
     padding: 0.5rem 0;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-evenly;
 
+}
+.navigation{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
