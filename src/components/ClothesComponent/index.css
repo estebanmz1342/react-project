@@ -1,0 +1,12 @@
+.contenedor-pagina2{
+    /*border-bottom: #C5C6C8 1px solid;*/
+}
+.contenedor-ropa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+p{
+    text-align: center;
+}

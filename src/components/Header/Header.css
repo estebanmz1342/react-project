@@ -12,4 +12,8 @@ h1{
 .header-title:hover{
     color: darkgray;
     transition: color 0.5s ease;
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
 }
