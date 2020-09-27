@@ -9,6 +9,7 @@ import Login from "../../container/Login"
 import Navbar from "../Navbar";
 import Header from "../Header/Header";
 import ErrorPage from "../../container/ErrorPage";
+import FoodPay from "../../container/FoodPay";
 
 const Routing = () => {
     return (
@@ -17,11 +18,12 @@ const Routing = () => {
             <Header />
             <Switch>
                 <Route exact path="/" component={Home}/>
-                <Route path="/clothes" component={Clothes}/>
-                <Route path="/food" component={Food}/>
-                <Route path="/details" component={Details}/>
-                <Route path="/accessories" component={Accessories}/>
-                <Route path="/login" component={Login}/>
+                <Route exact path="/clothes" component={Clothes}/>
+                <Route exact path="/food" component={Food}/>
+                <Route exact path="/food/pay" component={FoodPay}/>
+                <Route exact path="/details" component={Details}/>
+                <Route exact path="/accessories" component={Accessories}/>
+                <Route exact path="/login" component={Login}/>
                 <Route component={ErrorPage}/>
             </Switch>
         </Router>

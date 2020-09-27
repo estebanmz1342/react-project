@@ -3,13 +3,12 @@ import Header from "../Header/Header";
 import {Comida} from "../Producto";
 import "./pagina3.css"
 
-const Pagina3 = () => {
+const PagoComida = () => {
     return (
         <>
-            <Header name="InstaShop"/>
             <div className="contenedor">
                 <Comida
-                    src="https://instagram.fbog2-3.fna.fbcdn.net/v/t51.2885-15/e35/118088804_956241164849118_1203866465920334624_n.jpg?_nc_ht=instagram.fbog2-3.fna.fbcdn.net&_nc_cat=106&_nc_ohc=ysnUywoGGIIAX9wXN7N&oh=dfefc03f014331a8d2bc81857f2d290c&oe=5F6AA2B0"
+                    src="https://instagram.fbog8-1.fna.fbcdn.net/v/t51.2885-15/e35/119379262_606890546648760_8852724859130531005_n.jpg?_nc_ht=instagram.fbog8-1.fna.fbcdn.net&_nc_cat=100&_nc_ohc=LozFolqDnKoAX9YUZ3U&_nc_tp=18&oh=38124fdec90a2b4f4bb6abf8f194d612&oe=5F99B049"
                     alt="Hamburguesa Zeta" name="Hamburgueseria Zeta"
                     description="Hamburguesa Z tradicional" cantidad="Cantidad: 1" price="15k"/>
                 <a href="https://www.instagram.com" target="_blank">
@@ -17,8 +16,11 @@ const Pagina3 = () => {
                 </a>
             </div>
 
+
+
+
         </>
 
     )
 }
-export default Pagina3;
+export default PagoComida;
