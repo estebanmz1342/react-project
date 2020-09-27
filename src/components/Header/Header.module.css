@@ -6,10 +6,10 @@ h1{
     font-weight: 300;
     font-size: 5em;
 }
-.header-title{
+.header_title{
     text-decoration: none;
 }
-.header-title:hover{
+.header_title:hover{
     color: darkgray;
     transition: color 0.5s ease;
     cursor: pointer;

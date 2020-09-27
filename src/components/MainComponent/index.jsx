@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Producto} from "../Producto";
-import "./style.css"
+import Style from "./style.module.css"
 import axios from 'axios';
 
 class MainComponent extends Component{
@@ -27,7 +27,7 @@ class MainComponent extends Component{
     }
     render() {
         return (
-            <div className="contenedor-pagina1">
+            <div className={Style.contenedor_paginaP}>
                 {this.state.home.map((item) => {
                     return <Producto key={item.name} src={item.src} alt={item.alt} name={item.name} link={item.link} />;
                 })}

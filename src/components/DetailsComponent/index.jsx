@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Detalle} from "../Producto";
-import "./index.css"
+import Style from "./index.module.css"
 import axios from "axios";
 
 class AccessoriesComponent extends Component {
@@ -28,8 +28,8 @@ class AccessoriesComponent extends Component {
     render() {
         return (
             <>
-                <div className="contenedor-pagina2">
-                    <div className="contenedor-detalles">
+                <div className={Style.contenedor_pagina2}>
+                    <div className={Style.contenedor_detalles}>
                         {this.state.accessories.map((item) => {
                             return <Detalle key={item.name} src={item.src} alt={item.alt} name={item.name} price={item.price}
                                            description={item.description}/>;

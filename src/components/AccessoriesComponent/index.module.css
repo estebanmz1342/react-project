@@ -1,9 +1,10 @@
-.contenedor-pagina2{
+.contenedor_pagina2{
     border-bottom: #C5C6C8 1px solid;
 }
-.contenedor-detalles{
+.contenedor_accesorios{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    background-color: blueviolet;
 }

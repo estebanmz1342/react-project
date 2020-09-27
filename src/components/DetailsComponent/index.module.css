@@ -1,0 +1,10 @@
+.contenedor_pagina4{
+    border-bottom: #C5C6C8 1px solid;
+}
+.contenedor_detalles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: crimson;
+}

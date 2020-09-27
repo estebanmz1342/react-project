@@ -1,10 +1,11 @@
 import React from "react";
+import Style from "./style.module.css";
 
 const RelatedInfo = (props) => {
     return (
 
         <aside>
-            <ul className="sidebar">
+            <ul className={Style.sidebar}>
                 <li>{props.relInfo1}</li>
                 <li>{props.relInfo2}</li>
                 <b>

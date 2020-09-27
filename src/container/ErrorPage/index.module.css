@@ -1,4 +1,4 @@
-.container-error{
+.container_error{
     display: flex;
     justify-content: center;
     background-color: darkslateblue;
@@ -6,7 +6,7 @@
     margin: auto;
     border-radius: 30px;
 }
-.title-error{
+.title_error{
     color: beige;
     width: 65%;
     font-size: 60px;

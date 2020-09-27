@@ -1,7 +1,4 @@
-.contenedor-pagina2{
-    border-bottom: #C5C6C8 1px solid;
-}
-.contenedor-accesorios{
+.contenedor_paginaP{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

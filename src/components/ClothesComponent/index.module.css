@@ -1,11 +1,12 @@
-.contenedor-pagina2{
+.contenedor_pagina1{
     /*border-bottom: #C5C6C8 1px solid;*/
 }
-.contenedor-ropa{
+.contenedor_ropa{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    background-color: darkgoldenrod;
 }
 p{
     text-align: center;

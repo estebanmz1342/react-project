@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import RelatedInfo from "../Sidebar";
 import {Comida} from "../Producto";
-import "./index.css"
+import Style from "./index.module.css"
 import axios from "axios";
 
 class FoodComponent extends Component {
@@ -35,8 +35,8 @@ class FoodComponent extends Component {
         }];
         return (
             <>
-                <div className="contenedor-pagina2">
-                    <div className="contenedor-comida">
+                <div className={Style.contenedor_pagina2}>
+                    <div className={Style.contenedor_comida}>
                         {/*relInfo.map((item) => {
                             return <RelatedInfo key={item.name} relInfo1={item.relInfo1} relInfo2={item.relInfo2}
                                                 relInfo3={item.relInfo3} relInfo4={item.relInfo4}/>;
