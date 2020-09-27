@@ -10,7 +10,7 @@ class AccessoriesComponent extends Component {
     }
     async fetchData() {
         try{
-            const response =  await axios.get('./CLOTHES.json');
+            const response =  await axios.get('./DETAILS.json');
             this.setState({accessories: response.data});
         }catch (e) {
             if (e instanceof Error){
@@ -31,7 +31,7 @@ class AccessoriesComponent extends Component {
                 <div className="contenedor-pagina2">
                     <div className="contenedor-detalles">
                         {this.state.accessories.map((item) => {
-                            return <Detalle key={item.name} src={item.src} alt={item.alt} name={item.name}
+                            return <Detalle key={item.name} src={item.src} alt={item.alt} name={item.name} price={item.price}
                                            description={item.description}/>;
                         })}
                     </div>

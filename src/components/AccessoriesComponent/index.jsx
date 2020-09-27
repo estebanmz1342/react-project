@@ -3,15 +3,15 @@ import {Accesorio} from "../Producto";
 import "./index.css"
 import axios from "axios";
 
-class DetailsComponent extends Component {
+class AccessoriesComponent extends Component {
 
     state = {
-        details: [],
+        accessories: [],
     }
     async fetchData() {
         try{
-            const response =  await axios.get('./CLOTHES.json');
-            this.setState({details: response.data});
+            const response =  await axios.get('./ACCESSORIES.json');
+            this.setState({accessories: response.data});
         }catch (e) {
             if (e instanceof Error){
                 console.log(e.message);
@@ -30,7 +30,7 @@ class DetailsComponent extends Component {
             <>
                 <div className="contenedor-pagina2">
                     <div className="contenedor-accesorios">
-                        {this.state.details.map((item) => {
+                        {this.state.accessories.map((item) => {
                             return <Accesorio key={item.name} src={item.src} alt={item.alt} name={item.name}
                                            description={item.description}/>;
                         })}
@@ -44,4 +44,4 @@ class DetailsComponent extends Component {
 
 }
 
-export default DetailsComponent;
+export default AccessoriesComponent;

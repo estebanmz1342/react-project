@@ -11,7 +11,7 @@ import "./pagina3.css"
 
 const PagoComida = () => {
     
-    const [value, setValue] = React.useState(3);
+    const [value, setValue] = React.useState(3  );
 
     return (
         <>
