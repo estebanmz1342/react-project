@@ -7,7 +7,7 @@
     border: groove #77BFA3;
 }
 .contenedor_comida{
-    display: flex;
+    display: flex;  
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;

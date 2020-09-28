@@ -11,7 +11,7 @@ a {
 }
 
 a:hover {
-    color: white;
+    color:#54A065;
     transition: color 0.5s ease;
 }
 
@@ -22,7 +22,7 @@ nav {
     top: 0;
     display: flex;
     justify-content: space-evenly;
-    border-bottom: groove #DDE7C7;
+    border-bottom: groove #C9E4DE;
 }
 .navigation{
     display: flex;
