@@ -11,6 +11,9 @@ import Header from "../Header/Header";
 import ErrorPage from "../../container/ErrorPage";
 import FoodPay from "../../container/FoodPay";
 import Footer from "../Footer/Footer";
+import ClothesPay from "../../container/ClothesPay";
+import DetailsPay from "../../container/DetailsPay";
+import AccessoriesPay from "../../container/AccessoriesPay";
 
 const Routing = () => {
     return (
@@ -20,10 +23,13 @@ const Routing = () => {
             <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/clothes" component={Clothes}/>
+                <Route exact path="/clothes/pay" component={ClothesPay}/>
                 <Route exact path="/food" component={Food}/>
                 <Route exact path="/food/pay" component={FoodPay}/>
                 <Route exact path="/details" component={Details}/>
+                <Route exact path="/details/pay" component={DetailsPay}/>
                 <Route exact path="/accessories" component={Accessories}/>
+                <Route exact path="/accessories/pay" component={AccessoriesPay}/>
                 <Route exact path="/login" component={Login}/>
                 <Route component={ErrorPage}/>
             </Switch>

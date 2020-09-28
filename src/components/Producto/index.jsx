@@ -33,6 +33,7 @@ export const Comida = (props) => {
 export const Ropa = (props) => {
   return (
     <div className={Style.grid}>
+        <Link to="/clothes/pay" className="linked">
       <img className={Style.imagen} src={props.src} alt={props.alt} />
       <div className={Style.mydiv}>
         <p className={Style.text}>{props.name}</p>
@@ -41,12 +42,14 @@ export const Ropa = (props) => {
         <p>{props.cantidad}</p>
         <p>{props.price}</p>
       </div>
+            </Link>
     </div>
   );
 };
 export const Detalle = (props) => {
   return (
     <div className={Style.grid}>
+        <Link to="/details/pay" className="linked">
       <img className={Style.imagen} src={props.src} alt={props.alt} />
       <div className={Style.mydiv}>
         <p className={Style.text}>{props.name}</p>
@@ -54,12 +57,14 @@ export const Detalle = (props) => {
         <p>{props.cantidad}</p>
         <p>{props.price}</p>
       </div>
+            </Link>
     </div>
   );
 };
 export const Accesorio = (props) => {
   return (
     <div className={Style.grid}>
+        <Link to="/accessories/pay" className="linked">
       <img className={Style.imagen} src={props.src} alt={props.alt} />
       <div className={Style.mydiv}>
         <p className={Style.text}>{props.name}</p>
@@ -67,6 +72,7 @@ export const Accesorio = (props) => {
         <p>{props.cantidad}</p>
         <p>{props.price}</p>
       </div>
+            </Link>
     </div>
   );
 };

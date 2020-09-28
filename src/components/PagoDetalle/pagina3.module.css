@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap');
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+}
+button{
+    height: 100px;
+    width: 350px;
+    background-color: #C5C6C8;
+    color: black;
+    transition: color 0.5s ease;
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+    font-weight: 300;
+    font-size: 2em;
+    cursor: pointer;
+    
+}
+button:hover{
+    color: white;
+
+}
+.box{
+    display: flex;
+    position: relative;
+}
