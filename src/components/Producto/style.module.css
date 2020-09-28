@@ -1,12 +1,32 @@
-.imagen{
-    width: 250px;
-    color: green;
+.imagen {
+  width: 250px;
+  border-radius: 8px;
+  border: 3px solid #ddd;
+  height: 250px;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
-.grid{
-    display: inline-block;
-    padding: 25px;
-    flex: fit-content;
+.imagen:hover{
+    opacity: 0.6;
+    
+  }
+.text {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  
 }
-.linked{
-    text-decoration: none;
+
+.grid {
+  display: inline-block;
+  padding: 25px;
+  padding-bottom: 0;
+  flex: fit-content;
+  border-style: solid;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+.linked {
+  text-decoration: none;
 }

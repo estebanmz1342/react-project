@@ -8,7 +8,7 @@ const Navbar = () => {
             <ul className={Style.navigation}>
                 <li className={Style.navItem}><Link to="/clothes">Ropa</Link></li>
                 <li className={Style.navItem}><Link to="/food">Comida</Link></li>
-                <li className={Style.navItem}><Link to="/accessories">Miscelanea y accesorios</Link></li>
+                <li className={Style.navItem}><Link to="/accessories">Accesorios</Link></li>
                 <li className={Style.navItem}><Link to="/details">Detalles</Link></li>
                 <li className={Style.navItem}><Link to="/login">Log in</Link></li>
             </ul>

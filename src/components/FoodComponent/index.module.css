@@ -1,10 +1,10 @@
 .contenedor_pagina2{
     border-bottom: #C5C6C8 1px solid;
+    background-color: cadetblue;
 }
 .contenedor_comida{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: darkolivegreen;
 }

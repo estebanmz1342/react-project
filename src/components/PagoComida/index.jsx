@@ -23,8 +23,8 @@ const PagoComida = () => {
                 <a href="https://www.instagram.com" target="_blank">
                     <button onClick={() => window.alert("Vaya al perfil @HamburgueseriaZeta")}>PEDIR</button>
                 </a>
-                <Box component="fieldset" mb={3} borderColor="transparent">
-                    <Typography component="legend">Puntua :3</Typography>
+                <Box className={Style.box} component="fieldset" mb={3} borderColor="transparent">
+                    <Typography component="legend">Calificación</Typography>
                     <Rating
                         name="simple-controlled"
                         value={value}

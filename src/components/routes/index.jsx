@@ -10,6 +10,7 @@ import Navbar from "../Navbar";
 import Header from "../Header/Header";
 import ErrorPage from "../../container/ErrorPage";
 import FoodPay from "../../container/FoodPay";
+import Footer from "../Footer/Footer";
 
 const Routing = () => {
     return (
@@ -26,6 +27,7 @@ const Routing = () => {
                 <Route exact path="/login" component={Login}/>
                 <Route component={ErrorPage}/>
             </Switch>
+            <Footer />
         </Router>
     );
 
