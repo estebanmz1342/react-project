@@ -28,7 +28,7 @@ class AccessoriesComponent extends Component {
     render() {
         return (
             <>
-                <div className={Style.contenedor_pagina2}>
+                <div className={Style.contenedor_pagina4}>
                     <div className={Style.contenedor_detalles}>
                         {this.state.accessories.map((item) => {
                             return <Detalle key={item.name} src={item.src} alt={item.alt} name={item.name} price={item.price}

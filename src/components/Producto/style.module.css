@@ -23,6 +23,7 @@
   padding-bottom: 0;
   flex: fit-content;
   border-style: solid;
+  border: groove #77BFA3;
   width: auto;
   height: auto;
   border-radius: 8px;

@@ -1,12 +1,18 @@
 .contenedor_pagina1{
     /*border-bottom: #C5C6C8 1px solid;*/
+    background-color: #DDE7C7;
+    margin-left: auto;
+    padding: 15px;
+    margin: 30px;
+    border-radius: 8px;
+    border: groove #77BFA3;
 }
 .contenedor_ropa{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: darkgoldenrod;
+    
 }
 p{
     text-align: center;

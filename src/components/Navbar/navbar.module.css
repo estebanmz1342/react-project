@@ -1,13 +1,13 @@
 .navItem {
     display: flex;
-    margin: 1rem 5rem;
+    margin: 0.5rem 5rem;
     width: 15%;
     cursor: pointer;
     text-align: center;
 }
 
 a {
-    color: #202833;
+    color: #373737;
 }
 
 a:hover {
@@ -16,18 +16,19 @@ a:hover {
 }
 
 nav {
-    background-color: #C5C6C8;
+    background-color: #98C9A3;
     z-index:1;
     position: sticky;
     top: 0;
     display: flex;
     justify-content: space-evenly;
-
+    border-bottom: groove #DDE7C7;
 }
 .navigation{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
+    font-style: oblique;
 }
