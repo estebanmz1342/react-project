@@ -38,3 +38,27 @@
   width: auto;
   height: auto;
 }
+
+.buttonLogout {
+  margin-top: 20px;
+  background-color: #98C9A3;
+  font-size: 16px;
+  color:#373737;
+  width: auto;
+  height: auto;
+  margin-left: 45%;
+}
+
+.username{
+  font: bold;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+.logeado{
+  border-radius: 15px;
+  background-color: #98C9A3;
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -37,7 +37,7 @@ export default (props) => {
                 <button className={Style.buttonLogin} onClick={login} >Ingresar</button>
             </div>}
             {
-                user && <button onClick={logout}>Cerrar Sesión</button>
+               user && <button onClick={logout} className={Style.buttonLogout}>Cerrar Sesión</button> 
             }
         </div>
     )
