@@ -1,18 +1,30 @@
-import React from 'react';
+import React, { Component } from "react";
 import Header from "../Header/Header";
 import { Comida } from "../Producto";
 import Rating from '@material-ui/lab/Rating';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Style from "./pagina3.module.css";
+import { connect } from "react-redux";
+import * as actionTypes from "../../store/actions";
+import CounterControl from "../../components/CounterControl/CounterControl";
+import CounterOutput from "../../components/CounterOutput/CounterOutput";
 
 
 
 
-const PagoComida = () => {
+class PagoComida extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { value: 4 };
     
-    const [value, setValue] = React.useState(3  );
-
+        this.handleClick = this.handleClick.bind(this);
+      }
+    
+      handleClick(event) {
+        this.setState({ value: undefined });
+      }
+    render() {
     return (
         <>
             <div className={Style.contenedor}>
@@ -23,16 +35,24 @@ const PagoComida = () => {
                 <a href="https://www.instagram.com" target="_blank">
                     <button onClick={() => window.alert("Vaya al perfil @HamburgueseriaZeta")}>PEDIR</button>
                 </a>
-                <Box className={Style.box} component="fieldset" mb={3} borderColor="transparent">
-                    <Typography component="legend">Calificación</Typography>
-                    <Rating
-                        name="simple-controlled"
-                        value={value}
-                        onChange={(event, newValue) => {
-                            setValue(newValue);
-                        }}
-                    />
-                    </Box>
+                <div>
+            <Rating
+              name="simple-controlled"
+              {...this.props}
+              value={this.state.value}
+            />
+          </div>
+          <div>
+            <CounterOutput value={this.props.ctr} />
+            <CounterControl
+              label="-"
+              clicked={() => this.props.onDecrementCounter()}
+            />
+            <CounterControl
+              label="+"
+              clicked={() => this.props.onIncrementCounter()}
+            />
+          </div>
             </div>
 
 
@@ -40,6 +60,18 @@ const PagoComida = () => {
 
         </>
 
-    )
-}
-export default PagoComida;
+    );
+}}
+const mapStateToProps = (state) => {
+    return {
+      ctr: state.counterStore.counter,
+    };
+  };
+  
+  const mapDispatchToProps = (dispatch) => {
+    return {
+      onIncrementCounter: () => dispatch({ type: actionTypes.INCREMENT }),
+      onDecrementCounter: () => dispatch({ type: actionTypes.DECREMENT }),
+    };
+  };
+  export default connect(mapStateToProps, mapDispatchToProps)(PagoComida);

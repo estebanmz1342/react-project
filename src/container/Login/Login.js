@@ -1,7 +1,7 @@
 import React from 'react';
 import 'firebase/auth';
 import Auth from './Auth';
-import {useUser, useFirebaseApp} from 'reactfire';
+import {useUser} from 'reactfire';
 
 function Login(){
     const user = useUser();
