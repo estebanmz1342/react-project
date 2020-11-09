@@ -8,7 +8,7 @@ function Login(){
     const user = useUser();
     return(
         <div className={Style.logeado}>
-            <p>Bienvenido</p>
+            <p className={Style.P}>Bienvenido</p>
             {user &&<p className={Style.username}>Usuario:{user.email}</p>}
             <Auth />
         </div>
