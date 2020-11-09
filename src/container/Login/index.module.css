@@ -26,7 +26,7 @@
   color: #373737;
 }
 .input {
-  width: 100%;
+  width: 99%;
   border-radius: 8px;
   height: 25px;
 }
@@ -59,6 +59,7 @@
 }
 
 .logeado{
+<<<<<<< HEAD
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -75,4 +76,12 @@
   text-transform: uppercase;
   font-style: italic;
   color: #373737;
+=======
+  border-radius: 15px;
+  background-color: #98C9A3;
+  width: 80%;
+  font-size: 18px;
+  font-weight: bold;
+  margin: auto;
+>>>>>>> f181da5a76b00a06daf4758933508d515b49d3f7
 }
