@@ -5,7 +5,7 @@ import Clothes from "../../container/Clothes"
 import Food from "../../container/Food"
 import Details from "../../container/Details"
 import Accessories from "../../container/Accessories"
-import Login from "../../container/Login"
+import Login from "../../container/Login/Login"
 import Navbar from "../Navbar";
 import Header from "../Header/Header";
 import ErrorPage from "../../container/ErrorPage";
